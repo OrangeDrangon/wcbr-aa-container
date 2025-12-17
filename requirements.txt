@@ -70,4 +70,4 @@ cmShoppingList == 0.20
 allianceauth-georgeforge[discord] == 0.2.0
 
 # https://pypi.org/project/sentry-sdk/
-sentry-sdk == 2.33.1
+sentry-sdk ==2.48.0
