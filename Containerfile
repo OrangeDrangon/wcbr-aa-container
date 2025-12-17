@@ -2,5 +2,5 @@ FROM registry.gitlab.com/allianceauth/allianceauth/auth:v4.11.2@sha256:429d808a4
 
 WORKDIR ${AUTH_HOME}
 
-COPY /conf/requirements.txt requirements.txt
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
