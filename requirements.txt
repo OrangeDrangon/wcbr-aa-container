@@ -1,0 +1,73 @@
+# https://pypi.org/project/allianceauth-corptools/
+allianceauth-corptools == 2.15.2
+# allianceauth-corptools @ git+https://github.com/Solar-Helix-Independent-Transport/allianceauth-corp-tools.git
+
+# https://pypi.org/project/aa-esi-status/
+aa-esi-status == 3.2.0
+
+# https://pypi.org/project/aa-top/
+aa-top == 1.1.1
+
+# https://pypi.org/project/allianceauth-oidc-provider/
+allianceauth-oidc-provider == 0.0.1b7
+
+# https://pypi.org/project/allianceauth-securegroups/
+allianceauth-securegroups == 0.8.0
+
+# https://pypi.org/project/aa-simplewiki/
+aa-simplewiki == 2.1.0
+
+# https://pypi.org/project/django-eveuniverse/
+django-eveuniverse == 1.6.0
+
+# https://pypi.org/project/aa-package-monitor/
+aa-package-monitor == 2.3.0
+
+# https://pypi.org/project/allianceauth-blacklist/
+allianceauth-blacklist == 0.1.1
+
+# https://pypi.org/project/allianceauth-afat/
+allianceauth-afat == 4.2.0
+
+# https://pypi.org/project/allianceauth-discordbot/
+#allianceauth-discordbot == 4.1.0
+allianceauth-discordbot @ git+https://github.com/Solar-Helix-Independent-Transport/allianceauth-discordbot.git
+#allianceauth-discordbot @ git+https://github.com/nullsecurity-australia/allianceauth-discordbot.git@development
+
+# https://pypi.org/project/allianceauth-celeryanalytics/
+allianceauth-celeryanalytics == 0.0.7
+
+# https://pypi.org/project/allianceauth-corptools-moons/
+allianceauth-corptools-moons == 1.0.1
+
+# https://pypi.org/project/allianceauth-auth-stats/
+allianceauth-auth-stats == 0.0.2
+
+## invoices - georgeforge will use this soon, moons also needs it
+# https://pypi.org/project/allianceauth-invoices/
+allianceauth-invoices == 0.1.7
+
+# translate tool
+# allianceauth-translate-tool == 0.0.1
+allianceauth-translate-tool @ git+https://github.com/OrangeDrangon/allianceauth-translate-tool.git@add-openrouter-support
+
+# https://pypi.org/project/allianceauth-corptools-pinger/
+allianceauth-corptools-pinger == 0.6.2
+
+# ZKillboard Bot https://pypi.org/project/aa-killtracker/
+aa-killtracker == 1.2.0
+
+# https://pypi.org/project/aa-secret-santa/#description
+aa-secret-santa == 1.0.1
+
+# https://github.com/CMBrando/cmStructureRegistry
+cmStructureRegistry == 0.9951
+
+# https://github.com/CMBrando/cmShoppingList
+cmShoppingList == 0.20
+
+# https://pypi.org/project/allianceauth-georgeforge/
+allianceauth-georgeforge[discord] == 0.2.0
+
+# https://pypi.org/project/sentry-sdk/
+sentry-sdk == 2.33.1
