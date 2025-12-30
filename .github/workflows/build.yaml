@@ -9,7 +9,13 @@ on:
       - Containerfile
       - requirements.txt
         
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      force_no_cache:
+        description: 'Force build without cache'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -51,5 +57,5 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ steps.vars.outputs.owner_lc }}/${{ steps.vars.outputs.repo_lc }}/auth:latest
-          cache-from: type=registry,ref=ghcr.io/${{ steps.vars.outputs.owner_lc }}/${{ steps.vars.outputs.repo_lc }}/auth:buildcache
-          cache-to: type=registry,ref=ghcr.io/${{ steps.vars.outputs.owner_lc }}/${{ steps.vars.outputs.repo_lc }}/auth:buildcache,mode=max
+          cache-from: ${{ github.event.inputs.force_no_cache == 'true' && '' || format('type=registry,ref=ghcr.io/{0}/{1}/auth:buildcache', steps.vars.outputs.owner_lc, steps.vars.outputs.repo_lc) }}
+          cache-to: ${{ format('type=registry,ref=ghcr.io/{0}/{1}/auth:buildcache,mode=max', steps.vars.outputs.owner_lc, steps.vars.outputs.repo_lc) }}
