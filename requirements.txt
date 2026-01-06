@@ -55,7 +55,7 @@ allianceauth-translate-tool @ git+https://github.com/OrangeDrangon/allianceauth-
 allianceauth-corptools-pinger == 0.6.2
 
 # ZKillboard Bot https://pypi.org/project/aa-killtracker/
-aa-killtracker ==1.2.1
+aa-killtracker == 1.2.1
 
 # https://pypi.org/project/aa-secret-santa/#description
 aa-secret-santa == 1.0.1
@@ -64,10 +64,10 @@ aa-secret-santa == 1.0.1
 cmStructureRegistry == 0.9951
 
 # https://github.com/CMBrando/cmShoppingList
-cmShoppingList ==0.21
+cmShoppingList == 0.21
 
 # https://pypi.org/project/allianceauth-georgeforge/
-allianceauth-georgeforge[discord] ==0.3.2
+allianceauth-georgeforge[discord] == 0.3.3
 
 # https://pypi.org/project/sentry-sdk/
 sentry-sdk ==2.48.0
