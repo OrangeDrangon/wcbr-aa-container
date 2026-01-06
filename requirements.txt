@@ -67,7 +67,11 @@ cmStructureRegistry == 0.9951
 cmShoppingList == 0.21
 
 # https://pypi.org/project/allianceauth-georgeforge/
-allianceauth-georgeforge[discord] == 0.3.3
+#allianceauth-georgeforge[discord] == 0.3.3
+allianceauth-georgeforge[discord] @ git+https://github.com/ohhidenny/georgeforge.git@denny/dogma
+## Georgeforge-dev deps
+django-eveonline-sde @ git+https://github.com/Solar-Helix-Independent-Transport/django-eveonline-sde.git@ae13eb6ad1231d9683d6d6f6223521c59ae63a2c
+django-modeltranslation == 0.19.17
 
 # https://pypi.org/project/sentry-sdk/
 sentry-sdk ==2.48.0
