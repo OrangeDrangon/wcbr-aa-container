@@ -67,7 +67,7 @@ cmStructureRegistry == 0.9951
 cmShoppingList ==0.21
 
 # https://pypi.org/project/allianceauth-georgeforge/
-allianceauth-georgeforge[discord] == 0.2.0
+allianceauth-georgeforge[discord] ==0.3.0
 
 # https://pypi.org/project/sentry-sdk/
 sentry-sdk ==2.48.0
