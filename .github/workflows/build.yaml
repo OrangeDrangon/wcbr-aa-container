@@ -3,7 +3,7 @@ name: build
 on:
   push:
     branches:
-      - *
+      - '*'
     paths:
       - .github/workflows/build.yaml
       - Containerfile
