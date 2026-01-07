@@ -3,7 +3,7 @@ name: build
 on:
   push:
     branches:
-      - master
+      - *
     paths:
       - .github/workflows/build.yaml
       - Containerfile
@@ -30,9 +30,11 @@ jobs:
         run: |
           OWNER_LC=$(echo "${GITHUB_REPOSITORY_OWNER}" | tr '[:upper:]' '[:lower:]')
           REPO_LC=$(echo "${GITHUB_REPOSITORY#*/}" | tr '[:upper:]' '[:lower:]')
+          BRANCH_LC=$(echo ${GITHUB_REF_NAME/\//-} | tr '[:upper:]' '[:lower]')
           echo "owner_lc=$OWNER_LC" >> $GITHUB_OUTPUT
           echo "repo_lc=$REPO_LC" >> $GITHUB_OUTPUT
-  
+          echo "branch_lc=$BRANCH_LC" >> $GITHUB_OUTPUT
+
       - name: Checkout
         uses: actions/checkout@v6
 
@@ -56,7 +58,8 @@ jobs:
           file: ./Containerfile
           push: true
           tags: |
-            ghcr.io/${{ steps.vars.outputs.owner_lc }}/${{ steps.vars.outputs.repo_lc }}/auth:latest
+            ${{ format('ghcr.io/{0}/{1}/auth:{2}', steps.vars.outputs.owner_lc, steps.vars.outputs.repo_lc, steps.vars.outputs.branch_lc) }}
+            ${{ github.ref_name == 'master' && format('ghcr.io/{0}/{1}/auth:latest', steps.vars.outputs.owner_lc, steps.vars.outputs.repo_lc) || '' }}
           no-cache: ${{ github.event.inputs.force_no_cache == 'true' }}
           cache-from: ${{ format('type=registry,ref=ghcr.io/{0}/{1}/auth:buildcache', steps.vars.outputs.owner_lc, steps.vars.outputs.repo_lc) }}
           cache-to: ${{ format('type=registry,ref=ghcr.io/{0}/{1}/auth:buildcache,mode=max', steps.vars.outputs.owner_lc, steps.vars.outputs.repo_lc) }}
