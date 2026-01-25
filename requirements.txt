@@ -45,7 +45,7 @@ allianceauth-auth-stats ==0.1.1
 
 ## invoices - georgeforge will use this soon, moons also needs it
 # https://pypi.org/project/allianceauth-invoices/
-allianceauth-invoices == 0.1.7
+allianceauth-invoices == 0.1.8
 
 # translate tool
 # allianceauth-translate-tool == 0.0.1
@@ -67,7 +67,7 @@ cmStructureRegistry == 0.9951
 cmShoppingList == 0.21
 
 # https://pypi.org/project/allianceauth-georgeforge/
-allianceauth-georgeforge[discord,webhook] == 0.3.11
+allianceauth-georgeforge[discord,webhook] == 0.4.1
 ## Georgeforge-dev deps
 django-eveonline-sde @ git+https://github.com/Solar-Helix-Independent-Transport/django-eveonline-sde.git@ae13eb6ad1231d9683d6d6f6223521c59ae63a2c
 django-modeltranslation ==0.19.17
