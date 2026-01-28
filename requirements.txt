@@ -73,4 +73,4 @@ django-eveonline-sde @ git+https://github.com/Solar-Helix-Independent-Transport/
 django-modeltranslation ==0.19.17
 
 # https://pypi.org/project/sentry-sdk/
-sentry-sdk ==2.48.0
+sentry-sdk ==2.51.0
