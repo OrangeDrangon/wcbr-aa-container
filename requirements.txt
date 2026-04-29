@@ -42,7 +42,7 @@ allianceauth-auth-stats ==0.1.2
 
 ## invoices - georgeforge will use this soon, moons also needs it
 # https://pypi.org/project/allianceauth-invoices/
-allianceauth-invoices == 0.1.8
+allianceauth-invoices ==0.1.9
 
 # translate tool
 # allianceauth-translate-tool == 0.0.1
