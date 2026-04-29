@@ -32,7 +32,7 @@ allianceauth-discordbot == 5.0.0
 # allianceauth-discordbot @ git+https://github.com/nullsecurity-australia/allianceauth-discordbot.git@development
 
 # https://pypi.org/project/allianceauth-celeryanalytics/
-allianceauth-celeryanalytics ==0.0.8
+allianceauth-celeryanalytics ==0.1.1
 
 # https://pypi.org/project/allianceauth-corptools-moons/
 allianceauth-corptools-moons ==2.0.0b3
