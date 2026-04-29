@@ -35,7 +35,7 @@ allianceauth-discordbot == 5.0.0
 allianceauth-celeryanalytics ==0.0.8
 
 # https://pypi.org/project/allianceauth-corptools-moons/
-allianceauth-corptools-moons ==2.0.0b2
+allianceauth-corptools-moons ==2.0.0b3
 
 # https://pypi.org/project/allianceauth-auth-stats/
 allianceauth-auth-stats ==0.1.1
