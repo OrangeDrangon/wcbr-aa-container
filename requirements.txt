@@ -38,7 +38,7 @@ allianceauth-celeryanalytics ==0.1.1
 allianceauth-corptools-moons ==2.0.0b3
 
 # https://pypi.org/project/allianceauth-auth-stats/
-allianceauth-auth-stats ==0.1.1
+allianceauth-auth-stats ==0.1.2
 
 ## invoices - georgeforge will use this soon, moons also needs it
 # https://pypi.org/project/allianceauth-invoices/
