@@ -40,7 +40,7 @@ allianceauth-corptools-moons ==2.0.0
 # https://pypi.org/project/allianceauth-auth-stats/
 allianceauth-auth-stats ==0.1.2
 
-## invoices - georgeforge will use this soon, moons also needs it
+# invoices - georgeforge dep
 # https://pypi.org/project/allianceauth-invoices/
 allianceauth-invoices ==0.1.9
 
