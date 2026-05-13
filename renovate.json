@@ -8,5 +8,5 @@
     ":disableRateLimiting",
     ":disableDependencyDashboard"
   ],
-  "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
+  "gitAuthor": "Renovate Bot <bot@renovateapp.com>"
 }
