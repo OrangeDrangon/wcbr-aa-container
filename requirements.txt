@@ -18,7 +18,7 @@ allianceauth-securegroups ==0.10.1
 aa-simplewiki == 2.1.0
 
 # https://pypi.org/project/django-eveuniverse/
-django-eveuniverse ==1.6.1
+django-eveuniverse ==2.0.0
 
 # https://pypi.org/project/aa-package-monitor/
 aa-package-monitor == 2.3.0
