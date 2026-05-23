@@ -29,8 +29,6 @@ allianceauth-blacklist ==0.2.0
 
 # https://pypi.org/project/allianceauth-discordbot/
 allianceauth-discordbot == 5.0.0
-# allianceauth-discordbot @ git+https://github.com/Solar-Helix-Independent-Transport/allianceauth-discordbot.git
-# allianceauth-discordbot @ git+https://github.com/nullsecurity-australia/allianceauth-discordbot.git@development
 
 # https://pypi.org/project/allianceauth-celeryanalytics/
 allianceauth-celeryanalytics ==0.1.1
@@ -47,7 +45,7 @@ allianceauth-invoices ==0.1.9
 
 # translate tool
 # allianceauth-translate-tool == 0.0.1
-allianceauth-translate-tool @ git+https://github.com/OrangeDrangon/allianceauth-translate-tool.git@add-openrouter-support
+allianceauth-translate-tool @ git+https://github.com/worthlesscarebears/allianceauth-translate-tool.git@add-openrouter-support
 
 # https://pypi.org/project/allianceauth-corptools-pinger/
 allianceauth-corptools-pinger ==1.0.0
@@ -68,7 +66,7 @@ django-eveonline-sde ==0.0.1b9
 django-modeltranslation == 0.19.17
 
 # https://pypi.org/project/sentry-sdk/
-sentry-sdk == 2.48.0
+sentry-sdk ==2.60.0
 
 # https://github.com/Solar-Helix-Independent-Transport/allianceauth-prom-client/
 prometheus-redis-client == 0.6.0
