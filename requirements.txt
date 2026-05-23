@@ -69,9 +69,10 @@ django-modeltranslation == 0.19.17
 sentry-sdk ==2.60.0
 
 # https://github.com/Solar-Helix-Independent-Transport/allianceauth-prom-client/
-prometheus-redis-client == 0.6.0
-flask == 3.1.3
-allianceauth-prometheus-exporter @ git+https://github.com/Solar-Helix-Independent-Transport/allianceauth-prom-client.git@bcb18cf68a90aea98e743e14345669b6f13adad9
+# not aav5 compat
+#prometheus-redis-client == 0.6.0
+#flask == 3.1.3
+#allianceauth-prometheus-exporter @ git+https://github.com/Solar-Helix-Independent-Transport/allianceauth-prom-client.git@bcb18cf68a90aea98e743e14345669b6f13adad9
 
 # https://pypi.org/project/aa-buybackprogram/
 # aa-buybackprogram == 2.3.3
