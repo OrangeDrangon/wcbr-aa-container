@@ -54,7 +54,7 @@ allianceauth-corptools-pinger ==1.0.0
 aa-secret-santa == 1.0.1
 
 # https://github.com/CMBrando/cmStructureRegistry
-cmStructureRegistry == 0.9951
+cmStructureRegistry == 1.0.0
 
 # https://github.com/CMBrando/cmShoppingList
 cmShoppingList == 0.21
