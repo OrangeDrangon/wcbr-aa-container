@@ -62,6 +62,7 @@ cmShoppingList == 0.21
 # https://pypi.org/project/allianceauth-georgeforge/
 allianceauth-georgeforge[discord,webhook] == 0.6.1
 
+
 django-eveonline-sde ==0.0.1b9
 django-modeltranslation == 0.19.17
 
