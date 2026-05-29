@@ -77,4 +77,4 @@ sentry-sdk ==2.60.0
 # https://pypi.org/project/aa-buybackprogram/
 # aa-buybackprogram == 2.3.3
 # If downgrading please go back to 0017 or stuff is going to be whack
-aa-buybackprogram @ git+https://github.com/worthlesscarebears/allianceauth-buyback-program.git@de2d866bcbc20b48d334a963b3adb5903c1df10e
+aa-buybackprogram @ git+https://github.com/worthlesscarebears/allianceauth-buyback-program.git@480ef79061272572e5eaab45c4aa406a959b2eac
