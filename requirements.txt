@@ -15,21 +15,20 @@ allianceauth-oidc-provider ==0.0.1
 allianceauth-securegroups ==0.10.1
 
 # https://pypi.org/project/aa-simplewiki/
-aa-simplewiki == 2.1.0
+#unused - 20260523-denny
+#aa-simplewiki == 2.1.0
 
 # https://pypi.org/project/django-eveuniverse/
-django-eveuniverse ==1.6.1
+django-eveuniverse == 2.0.0
 
 # https://pypi.org/project/aa-package-monitor/
-aa-package-monitor == 2.3.0
+aa-package-monitor == 3.0.0
 
 # https://pypi.org/project/allianceauth-blacklist/
 allianceauth-blacklist ==0.2.0
 
 # https://pypi.org/project/allianceauth-discordbot/
 allianceauth-discordbot == 5.0.0
-# allianceauth-discordbot @ git+https://github.com/Solar-Helix-Independent-Transport/allianceauth-discordbot.git
-# allianceauth-discordbot @ git+https://github.com/nullsecurity-australia/allianceauth-discordbot.git@development
 
 # https://pypi.org/project/allianceauth-celeryanalytics/
 allianceauth-celeryanalytics ==0.1.1
@@ -40,13 +39,13 @@ allianceauth-corptools-moons ==2.0.0
 # https://pypi.org/project/allianceauth-auth-stats/
 allianceauth-auth-stats ==0.1.2
 
-## invoices - georgeforge will use this soon, moons also needs it
+# invoices - georgeforge dep
 # https://pypi.org/project/allianceauth-invoices/
 allianceauth-invoices ==0.1.9
 
 # translate tool
 # allianceauth-translate-tool == 0.0.1
-allianceauth-translate-tool @ git+https://github.com/OrangeDrangon/allianceauth-translate-tool.git@add-openrouter-support
+allianceauth-translate-tool @ git+https://github.com/worthlesscarebears/allianceauth-translate-tool.git@add-openrouter-support
 
 # https://pypi.org/project/allianceauth-corptools-pinger/
 allianceauth-corptools-pinger ==1.0.0
@@ -55,26 +54,28 @@ allianceauth-corptools-pinger ==1.0.0
 aa-secret-santa == 1.0.1
 
 # https://github.com/CMBrando/cmStructureRegistry
-cmStructureRegistry == 0.9951
+cmStructureRegistry == 1.0.0
 
 # https://github.com/CMBrando/cmShoppingList
 cmShoppingList == 0.21
 
 # https://pypi.org/project/allianceauth-georgeforge/
-allianceauth-georgeforge[discord,webhook] == 0.5.5
+allianceauth-georgeforge[discord,webhook] == 0.6.1
+
 
 django-eveonline-sde ==0.0.1b9
 django-modeltranslation == 0.19.17
 
 # https://pypi.org/project/sentry-sdk/
-sentry-sdk == 2.48.0
+sentry-sdk ==2.60.0
 
 # https://github.com/Solar-Helix-Independent-Transport/allianceauth-prom-client/
-prometheus-redis-client == 0.6.0
-flask == 3.1.3
-allianceauth-prometheus-exporter @ git+https://github.com/Solar-Helix-Independent-Transport/allianceauth-prom-client.git@bcb18cf68a90aea98e743e14345669b6f13adad9
+# not aav5 compat
+#prometheus-redis-client == 0.6.0
+#flask == 3.1.3
+#allianceauth-prometheus-exporter @ git+https://github.com/Solar-Helix-Independent-Transport/allianceauth-prom-client.git@bcb18cf68a90aea98e743e14345669b6f13adad9
 
 # https://pypi.org/project/aa-buybackprogram/
 # aa-buybackprogram == 2.3.3
 # If downgrading please go back to 0017 or stuff is going to be whack
-aa-buybackprogram @ git+https://github.com/worthlesscarebears/allianceauth-buyback-program.git@0b34efaf8b7d4a035bf8484e584fb8f5d509eabe
+aa-buybackprogram @ git+https://github.com/worthlesscarebears/allianceauth-buyback-program.git@7bd5fedf27a7bde2ef7f7bffea02311020c8d6e9
