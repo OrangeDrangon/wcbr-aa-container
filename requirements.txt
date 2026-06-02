@@ -9,7 +9,7 @@ aa-esi-status ==3.3.5
 aa-top == 1.1.1
 
 # https://pypi.org/project/allianceauth-oidc-provider/
-allianceauth-oidc-provider ==0.0.1
+allianceauth-oidc-provider ==0.0.2
 
 # https://pypi.org/project/allianceauth-securegroups/
 allianceauth-securegroups ==0.10.1
