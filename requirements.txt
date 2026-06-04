@@ -3,7 +3,7 @@ allianceauth-corptools ==3.0.0
 # allianceauth-corptools @ git+https://github.com/Solar-Helix-Independent-Transport/allianceauth-corp-tools.git@3.0.0b5
 
 # https://pypi.org/project/aa-esi-status/
-aa-esi-status ==3.3.5
+aa-esi-status ==3.4.0
 
 # https://pypi.org/project/aa-top/
 aa-top == 1.1.1
@@ -60,7 +60,7 @@ cmStructureRegistry == 1.0.1
 cmShoppingList == 0.21
 
 # https://pypi.org/project/allianceauth-georgeforge/
-allianceauth-georgeforge[discord,webhook] == 0.6.1
+allianceauth-georgeforge[discord,webhook] == 0.6.2
 
 
 django-eveonline-sde ==0.0.1b9
