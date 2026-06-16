@@ -60,7 +60,7 @@ cmStructureRegistry ==1.0.3
 cmShoppingList == 0.21
 
 # https://pypi.org/project/allianceauth-georgeforge/
-allianceauth-georgeforge[discord,webhook] == 0.6.2
+allianceauth-georgeforge[discord,webhook] == 0.6.3
 
 
 django-eveonline-sde ==0.0.1b10
