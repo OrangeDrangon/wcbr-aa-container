@@ -1,12 +1,12 @@
 # https://pypi.org/project/allianceauth-corptools/
-allianceauth-corptools ==3.0.0
+allianceauth-corptools ==3.1.0
 # allianceauth-corptools @ git+https://github.com/Solar-Helix-Independent-Transport/allianceauth-corp-tools.git@3.0.0b5
 
 # https://pypi.org/project/aa-esi-status/
 aa-esi-status ==4.0.0
 
 # https://pypi.org/project/aa-top/
-aa-top == 1.1.1
+aa-top == 2.0.0
 
 # https://pypi.org/project/allianceauth-oidc-provider/
 allianceauth-oidc-provider ==0.0.2
@@ -34,7 +34,7 @@ allianceauth-discordbot == 5.0.0
 allianceauth-celeryanalytics ==0.1.1
 
 # https://pypi.org/project/allianceauth-corptools-moons/
-allianceauth-corptools-moons ==2.0.0
+allianceauth-corptools-moons ==2.0.1
 
 # https://pypi.org/project/allianceauth-auth-stats/
 allianceauth-auth-stats ==0.1.2
@@ -63,7 +63,7 @@ cmShoppingList == 0.21
 allianceauth-georgeforge[discord,webhook] == 0.6.2
 
 
-django-eveonline-sde ==0.0.1b9
+django-eveonline-sde ==0.0.1b10
 django-modeltranslation == 0.19.17
 
 # https://pypi.org/project/sentry-sdk/
