@@ -6,7 +6,7 @@ allianceauth-corptools ==3.0.0
 aa-esi-status ==4.0.0
 
 # https://pypi.org/project/aa-top/
-aa-top == 1.1.1
+aa-top ==2.0.0
 
 # https://pypi.org/project/allianceauth-oidc-provider/
 allianceauth-oidc-provider ==0.0.2
