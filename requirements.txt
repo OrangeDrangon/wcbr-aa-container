@@ -67,7 +67,7 @@ django-eveonline-sde ==0.0.1b10
 django-modeltranslation == 0.19.17
 
 # https://pypi.org/project/sentry-sdk/
-sentry-sdk ==2.62.0
+sentry-sdk ==2.63.0
 
 # https://github.com/Solar-Helix-Independent-Transport/allianceauth-prom-client/
 # not aav5 compat
