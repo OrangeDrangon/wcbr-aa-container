@@ -26,45 +26,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  docker:
-    runs-on: ubuntu-latest
-    environment: build
-    steps:
-      - name: Normalize owner and repo to lowercase
-        id: vars
-        run: |
-          OWNER_LC=$(echo "${GITHUB_REPOSITORY_OWNER}" | tr '[:upper:]' '[:lower:]')
-          REPO_LC=$(echo "${GITHUB_REPOSITORY#*/}" | tr '[:upper:]' '[:lower:]')
-          BRANCH_LC=$(echo ${GITHUB_REF_NAME/\//-} | tr '[:upper:]' '[:lower]')
-          echo "owner_lc=$OWNER_LC" >> $GITHUB_OUTPUT
-          echo "repo_lc=$REPO_LC" >> $GITHUB_OUTPUT
-          echo "branch_lc=$BRANCH_LC" >> $GITHUB_OUTPUT
-
-      - name: Checkout
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
-
-      - name: Log in to GitHub Container Registry
-        uses: docker/login-action@650006c6eb7dba73a995cc03b0b2d7f5ca915bee # v4
-        with:
-          registry: ghcr.io
+  build:
+    uses: docker/github-builder/.github/workflows/build.yml@5f637c833aa76bc99372a1dc9a6f8bcd8056fb85 # v1.12.0
+    permissions:
+      contents: read
+      id-token: write
+      packages: write
+    with:
+      distribute: true
+      output: image
+      push: true
+      platforms: linux/amd64,linux/arm64
+      cache: ${{ github.event.inputs.force_no_cache != 'true' }}
+      cache-mode: max
+      file: "Containerfile"
+      meta-images: ghcr.io/${{ github.repository }}/auth
+      meta-tags: |
+        type=ref,event=branch
+        type=raw,value=latest,enable=${{ github.ref_name == 'master' }}
+    secrets:
+      registry-auths: |
+        - registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@06116385d9baf250c9f4dcb4858b16962ea869c3 # v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@d7f5e7f509e45cec5c76c4d5afdd7de93d0b3df5 # v4
-
-      - name: Build and push
-        uses: docker/build-push-action@f9f3042f7e2789586610d6e8b85c8f03e5195baf # v7
-        with:
-          context: .
-          file: ./Containerfile
-          push: true
-          tags: |
-            ${{ format('ghcr.io/{0}/{1}/auth:{2}', steps.vars.outputs.owner_lc, steps.vars.outputs.repo_lc, steps.vars.outputs.branch_lc) }}
-            ${{ github.ref_name == 'master' && format('ghcr.io/{0}/{1}/auth:latest', steps.vars.outputs.owner_lc, steps.vars.outputs.repo_lc) || '' }}
-          no-cache: ${{ github.event.inputs.force_no_cache == 'true' }}
-          cache-from: ${{ format('type=registry,ref=ghcr.io/{0}/{1}/auth:buildcache', steps.vars.outputs.owner_lc, steps.vars.outputs.repo_lc) }}
-          cache-to: ${{ format('type=registry,ref=ghcr.io/{0}/{1}/auth:buildcache,mode=max', steps.vars.outputs.owner_lc, steps.vars.outputs.repo_lc) }}
