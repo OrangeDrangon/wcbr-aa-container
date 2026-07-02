@@ -22,7 +22,7 @@ allianceauth-securegroups ==0.10.1
 django-eveuniverse == 2.0.0
 
 # https://pypi.org/project/aa-package-monitor/
-aa-package-monitor == 3.0.0
+aa-package-monitor ==3.0.2
 
 # https://pypi.org/project/allianceauth-blacklist/
 allianceauth-blacklist ==0.2.1
