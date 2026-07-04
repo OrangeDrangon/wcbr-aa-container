@@ -63,7 +63,7 @@ cmShoppingList == 0.21
 allianceauth-georgeforge[discord,webhook] == 0.6.3
 
 
-django-eveonline-sde ==0.0.1b10
+django-eveonline-sde ==0.0.1b11
 django-modeltranslation == 0.19.17
 
 # https://pypi.org/project/sentry-sdk/
