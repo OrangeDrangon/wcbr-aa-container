@@ -12,7 +12,7 @@ aa-top == 2.0.0
 allianceauth-oidc-provider ==0.0.2
 
 # https://pypi.org/project/allianceauth-securegroups/
-allianceauth-securegroups ==0.10.1
+allianceauth-securegroups ==0.10.2
 
 # https://pypi.org/project/aa-simplewiki/
 #unused - 20260523-denny
