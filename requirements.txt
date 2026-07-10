@@ -48,7 +48,7 @@ allianceauth-invoices ==0.1.9
 allianceauth-translate-tool @ git+https://github.com/worthlesscarebears/allianceauth-translate-tool.git@add-openrouter-support
 
 # https://pypi.org/project/allianceauth-corptools-pinger/
-allianceauth-corptools-pinger ==1.0.0
+allianceauth-corptools-pinger ==1.1.0
 
 # https://pypi.org/project/aa-secret-santa/#description
 aa-secret-santa == 1.0.1
