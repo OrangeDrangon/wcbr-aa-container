@@ -28,7 +28,7 @@ aa-package-monitor ==3.0.2
 allianceauth-blacklist ==0.2.1
 
 # https://pypi.org/project/allianceauth-discordbot/
-allianceauth-discordbot == 5.0.0
+allianceauth-discordbot ==5.0.1
 
 # https://pypi.org/project/allianceauth-celeryanalytics/
 allianceauth-celeryanalytics ==0.1.1
