@@ -63,7 +63,7 @@ cmShoppingList == 0.21
 allianceauth-georgeforge[discord,webhook] == 0.6.3
 
 # GeorgeForge ContractManager
-allianceauth-gf-conman @ git+https://github.com/worthlesscarebears/gf_conman@0.1.10
+allianceauth-gf-conman @ git+https://github.com/worthlesscarebears/gf_conman@0.1.11
 
 django-eveonline-sde ==0.0.2
 django-modeltranslation == 0.19.17
