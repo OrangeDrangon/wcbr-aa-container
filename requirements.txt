@@ -65,7 +65,7 @@ allianceauth-georgeforge[discord,webhook] == 0.6.3
 # GeorgeForge ContractManager
 allianceauth-gf-conman @ git+https://github.com/worthlesscarebears/gf_conman@f12c05eac8dde334dce5d5bdcd20b4d3933d4559
 
-django-eveonline-sde ==0.1.2
+django-eveonline-sde ==0.2.0
 #django-modeltranslation == 0.19.17 # sde properly pulls this in now
 
 # https://pypi.org/project/sentry-sdk/
