@@ -60,7 +60,7 @@ cmStructureRegistry ==1.0.3
 cmShoppingList == 0.21
 
 # https://pypi.org/project/allianceauth-georgeforge/
-allianceauth-georgeforge[discord,webhook] == 0.6.5
+allianceauth-georgeforge[discord,webhook] ==0.6.6
 
 # GeorgeForge ContractManager
 allianceauth-gf-conman @ git+https://github.com/worthlesscarebears/gf_conman@f12c05eac8dde334dce5d5bdcd20b4d3933d4559
